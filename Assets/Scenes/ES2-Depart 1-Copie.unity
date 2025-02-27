@@ -2023,6 +2023,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 494332832}
     m_Modifications:
+    - target: {fileID: 7165430295591806332, guid: 20c0aa25022fd474ebac164d517acaa3,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 114
+      objectReference: {fileID: 0}
     - target: {fileID: 8298684462619277302, guid: 20c0aa25022fd474ebac164d517acaa3,
         type: 3}
       propertyPath: m_Name
@@ -2091,7 +2096,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8298684462619277302, guid: 20c0aa25022fd474ebac164d517acaa3,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8632670369948054859}
+      addedObject: {fileID: 8632670369948054863}
   m_SourcePrefab: {fileID: 100100000, guid: 20c0aa25022fd474ebac164d517acaa3, type: 3}
 --- !u!4 &8632670369948054854 stripped
 Transform:
@@ -2130,7 +2135,7 @@ MonoBehaviour:
   m_DefaultActionMap: Personnage
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &8632670369948054859
+--- !u!114 &8632670369948054863
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2142,7 +2147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 566af615e710df4458c43c935f511da4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _vitesse: 1
+  _vitessePromenade: 10
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
