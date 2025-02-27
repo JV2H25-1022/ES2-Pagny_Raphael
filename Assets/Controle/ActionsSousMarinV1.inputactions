@@ -1,5 +1,5 @@
 {
-    "name": "Deplacement",
+    "name": "ActionsSousMarinV1",
     "maps": [
         {
             "name": "Personnage",
@@ -9,17 +9,26 @@
                     "name": "Nager",
                     "type": "Value",
                     "id": "1ed262e1-f0ab-458e-9a32-de36259f8cfe",
-                    "expectedControlType": "Vector3",
+                    "expectedControlType": "Vector2",
                     "processors": "",
-                    "interactions": "",
+                    "interactions": "Press",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Boost",
+                    "type": "Button",
+                    "id": "ca91abe8-db87-40e9-b4c7-fc38f875b487",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press(behavior=2)",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
                 {
-                    "name": "3D Vector",
-                    "id": "660e1c86-0485-4767-8a7f-47fba1e72646",
-                    "path": "3DVector",
+                    "name": "2D Vector",
+                    "id": "44e1a9be-8284-4c65-bf58-038261031b05",
+                    "path": "2DVector",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -29,29 +38,7 @@
                 },
                 {
                     "name": "up",
-                    "id": "f29e69f3-d941-4251-8a56-0880a81d26a4",
-                    "path": "<Keyboard>/q",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Nager",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "down",
-                    "id": "7affe838-dc45-4abc-aee1-2a55d7ace319",
-                    "path": "<Keyboard>/e",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Nager",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "forward",
-                    "id": "abdc09fa-2a85-4c8c-bb8f-46f014528a2e",
+                    "id": "4a800727-4e9a-4bd3-8bba-381ea2e560a3",
                     "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
@@ -61,8 +48,8 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "backward",
-                    "id": "0d37340f-1b54-4e3c-a939-67620a77efa3",
+                    "name": "down",
+                    "id": "dbfffa32-077d-4986-9e2f-2f5732ffd102",
                     "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
@@ -70,6 +57,39 @@
                     "action": "Nager",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "33175c5e-92bb-4d4c-a4b5-24e745fc8430",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Nager",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "6deeef99-8384-47ad-8935-b2d329b35989",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Nager",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "8db545c4-d450-4f32-a056-990dfa722430",
+                    "path": "<Keyboard>/shift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Boost",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
